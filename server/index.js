@@ -46,7 +46,7 @@ const errorHandler = function (err, req, res, next) {
       error_code: "OTHER_ERROR",
       error_message: "I got some other message on the server.",
     });
-    console.error(JSON.stringify(err, null, 2));
+    console.error(err);
   }
 };
 app.use(errorHandler);
