@@ -18,7 +18,10 @@ router.post("/create_session_token", async (req, res, next) => {
     });
 
     console.log("Session token response:", response.data);
-    const linkToken = response.data.link.link_token;
+    const linkToken = response.data.link?.link_token;
+    if (!linkToken) {
+      throw new Error("Session token response did not include a link token");
+    }
     res.json({ linkToken });
   } catch (error) {
     console.warn("Error creating session token:", error);
