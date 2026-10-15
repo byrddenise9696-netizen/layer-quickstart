@@ -74,7 +74,7 @@ To see Layer in action:
 
 To see Extended Autofill in action:
 
-- After clicking the **Create new account** button, enter a phone number that is **not** in Layer's system, such as 415-555-0000.
+- After clicking the **Create new account** button, enter a phone number outside Plaid's 415-555-**** test range that you haven't used in Link before.
 - Enter a birthday that represents an Extended Autofill user, such as 01/18/1975.
 - Complete the Layer process, by entering the SMS code (123456) and agreeing to share your information
   - If you do not see Layer appear here, make sure you set "Collect financial accounts" to **optional** in the Layer Template Editor.
